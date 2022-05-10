@@ -64,21 +64,9 @@ mainHead.forEach((item) => (item.style.fontStyle = "italic"));
 const logoHead = document.getElementById("logo-img");
 logoHead.src = "http://localhost:9000/img/logo.png";
 
-const resource = document.createElement("a");
-resource.textContent = "Resource";
-resource.href = "#";
-resource.classList.add("nav-item-7");
-document.querySelector("nav").appendChild(resource);
-
-const sponsors = document.createElement("a");
-sponsors.textContent = "Sponsors";
-sponsors.href = "#";
-sponsors.classList.add("nav-item-8");
-document.querySelector("nav").prepend(sponsors);
-
 //CTA
-let roundImg = document.getElementById("cta-img");
-roundImg.setAttribute("src", siteContent["cta"]["img-src"]);
+const roundImg = document.getElementById("cta-img");
+roundImg.src = "http://localhost:9000/img/cta.png";
 
 const ctaTxt = document.querySelector("h1");
 ctaTxt.textContent = siteContent.cta["h1"];
@@ -98,8 +86,8 @@ topP[0].textContent = siteContent["main-content"]["features-content"];
 topP[1].textContent = siteContent["main-content"]["about-content"];
 
 //Middle Img
-document.querySelector("#middle-img").src =
-  siteContent["main-content"]["middle-img-src"];
+const middleImg = document.getElementById("middle-img");
+middleImg.src = "http://localhost:9000/img/accent.png";
 
 //Bottom Section
 const bottomSection = document.querySelector(".bottom-content");
