@@ -74,7 +74,7 @@ ctaTxt.textContent = siteContent.cta["h1"];
 const ctaBtn = document.querySelector("button");
 ctaBtn.textContent = siteContent.cta["button"];
 
-//Top Section
+//Top Section of main content
 const topSection = document.querySelector(".top-content");
 const topHeading = topSection.querySelectorAll("h4");
 const topP = topSection.querySelectorAll("p");
@@ -89,7 +89,7 @@ topP[1].textContent = siteContent["main-content"]["about-content"];
 const middleImg = document.getElementById("middle-img");
 middleImg.src = "http://localhost:9000/img/accent.png";
 
-//Bottom Section
+//Bottom Section of main content
 const bottomSection = document.querySelector(".bottom-content");
 const bottomHeading = bottomSection.querySelectorAll("h4");
 const bottomP = bottomSection.querySelectorAll("p");
